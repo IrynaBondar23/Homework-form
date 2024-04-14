@@ -1,0 +1,119 @@
+:root {
+    --background-color: #1A1A1A;
+    --font-color: #ffffff87;
+    --accent-color: #00bfff;
+    --input-color: #696969;
+    --btn-color: #ffff;
+}
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Montserrat;
+    font-size: 14px;
+    padding: 100px;
+    color: var(--font-color);
+}
+form {
+    width: 380px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+    transition: box-shadow 0.3s ease;
+}
+.title {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+.title_img {
+    width: 19px;
+    height: 19px;
+    margin-right: 12px;
+    background-color: #00bfff;
+    border: 2px solid #035b78;
+    border-radius: 50px;
+}
+
+.title_text {
+    font-size: 28px;
+    font-weight: 600;
+    color: #00bfff;
+}
+.name_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+input {
+    background-color: var(--input-color);
+    padding: 13px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.name_box input {
+    width: 100%;
+}
+.input {
+    width: 100%;
+}
+label {
+    position: relative;
+}
+span {
+    color: var(--font-color);
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    transition: 0.3s ease;
+}
+form label input:focus + span,
+form label input:valid + span {
+    top: -7px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--btn-color);
+}
+.form:focus-within {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.input:valid {
+    border: 1px solid green;
+}
+.input:invalid {
+    border: 1px solid red;
+}
+button {
+    width: 300px;
+    height: 39px;
+    background-color: var(--accent-color);
+    outline: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+}
+button:disabled {
+    opacity: 0.5;
+    cursor: no-drop;
+}
+.signin {
+    margin: 0 auto;
+}
+a {
+    color: #00bfff;
+}

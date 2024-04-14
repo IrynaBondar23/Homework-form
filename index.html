@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form class="form" action="" autocomplete="on">
+        <div class="title">
+            <div class="title_img"></div>
+            <p class="title_text">Register</p>
+        </div>
+        <p class="message">Signup now and get full access to our app.</p>
+        <div class="name_box">
+            <label>
+                <input class="input" type="text"
+                required
+                pattern="[A-Za-z]+">
+                <span>Firstname</span>
+            </label>
+            <label>
+                <input class="input" type="text"
+                required
+                pattern="[A-Za-z]+">
+                <span>Lastname</span>
+            </label>
+        </div>
+        <label>
+            <input class="input" 
+            type="email"
+            required
+            minlength="6"
+            maxlength="24"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" >
+            <span>Email</span>
+        </label>
+        <label>
+            <input class="input" 
+            type="password"
+            required
+            minlength="6"
+            maxlength="24"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,24}$">
+            <span>Password</span>
+        </label>
+        <label for="">
+            <input class="input" 
+            type="password"
+            required
+            minlength="6"
+            maxlength="24"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,24}$">
+            <span>Confirm password</span>
+        </label>
+        <button disabled type="submit">Submit</button>
+        <p class="signin">Already have an acount? <a href="#">Signin</a></p>
+
+    </form>
+</body>
+</html>
